@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import shortid from "shortid";
-import FeedbackButtons from "./FeedbackButtons";
-import FeedbackStatistic from "./StatisticItem/StatisticItem";
+import FeedbackButtons from "../FeedbackButtons/FeedbackButtons";
+import FeedbackStatistic from "../StatisticItem/StatisticItem";
 
 class Feedback extends Component {
 
