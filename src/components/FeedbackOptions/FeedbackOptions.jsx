@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './FeedbackButtons.module.css';
+import styles from './FeedbackOptions.module.css';
 
 const FeedbackButtons = ({name, onClick}) => {
     return (
