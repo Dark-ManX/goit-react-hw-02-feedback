@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const AdditionalStats = ({total, positive}) => {
     return (
         <div>
@@ -8,3 +10,8 @@ const AdditionalStats = ({total, positive}) => {
 }
 
 export default AdditionalStats;
+
+AdditionalStats.propTypes = {
+    total: PropTypes.number,
+    positive: PropTypes.number,
+}

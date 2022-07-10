@@ -1,8 +1,10 @@
 import shortid from "shortid";
+import PropTypes from 'prop-types';
 import StatisticItem from '../StatisticItem/StatisticItem';
 import AdditionalStats from "../AdditionalStats/AdditionalStats";
 
 const Statistics = ({keys, value, total, positivePercentage}) => {
+    
     return (
         <div>
                 
@@ -27,3 +29,8 @@ const Statistics = ({keys, value, total, positivePercentage}) => {
 }
 
 export default Statistics;
+
+Statistics.propTypes = {
+    keys: PropTypes.array,
+    value: PropTypes.shape({}),
+}

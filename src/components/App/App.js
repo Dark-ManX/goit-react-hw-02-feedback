@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import shortid from 'shortid';
 import './App.css';
-import FeedbackButtons from '../FeedbackOptions/FeedbackOptions';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 import Statistics from '../Statistics/Statistics';
 import Section from '../Section/Section';
 import styles from './App.module.css';
@@ -39,7 +39,7 @@ class App extends Component {
         <Section
           title="Please leave feedback"
           children={keys.map(el => (
-            <FeedbackButtons key={shortid.generate()} name={el} onClick={this.handleButtonClick} />
+            <FeedbackOptions key={shortid.generate()} name={el} onClick={this.handleButtonClick} />
           ))}
         />
 

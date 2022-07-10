@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import styles from './FeedbackOptions.module.css';
 
-const FeedbackButtons = ({name, onClick}) => {
+const FeedbackOptions = ({name, onClick}) => {
     return (
         <button className={styles.button} type='button' onClick={onClick}>{name}</button>
     )
 }
 
-export default FeedbackButtons;
+export default FeedbackOptions;
 
-FeedbackButtons.propTypes = {
+FeedbackOptions.propTypes = {
     name: PropTypes.string,
     onClick: PropTypes.func,
 }
